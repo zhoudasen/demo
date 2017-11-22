@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>shoppingcar</title>
+	<link rel="stylesheet" href="fonts/iconfont.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoppingcar.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/shoppingcar.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+		<div class="header_wrap">
+			<div class="top_nav">
+				<div class="header_inner clearfix">
+					<div class="home">
+						<a href="index.html">
+							<em class="iconfont icon-home"></em>
+							网站首页
+						</a>
+					</div>
+					<div class="nav_list">
+						<ul class="nav_list_a">
+							<li class="hd_menu_tit"><a href="login.html">登录</a></li>
+							<li class="hd_menu_tit"><a href="register.html">注册</a></li>
+							<li class="hd_menu_tit"><a href="#">我的订单</a></li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu">我的特卖</a>
+								<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">品牌收藏(<b>0</b>)</a></li>
+										<li><a href="#">商品收藏(<b>0</b>)</a></li>
+										<li><a href="#">我的足迹(<b>0</b>)</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu">客服服务</a>
+								<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">联系客服</a></li>
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										<li><a href="#">知识产权投诉</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu"><em class="iconfont icon-phone"></em>手机版</a>
+								<div class="erweima">
+									<a href="#"><img src="images/erweima.jpg" alt=""></a>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#"class="hd_menu">更多</a>
+								<div class="more_list">
+									<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">合作专区</a></li>
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										
+									</ul>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_mid clearfix">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logonew.png" alt="">
+					</a>
+				</div>
+				<div class="logo_one">
+					<a href="#">
+						<img src="images/logo1.png" alt="">
+					</a>
+				</div>
+				<div class="flow-step-cart">
+					<div class="flow-step ">
+						<a href="#">
+							<div class="flow-p flow-one"></div>
+							<div class="flow-text">查看购物袋</div>
+						</a>
+					</div>
+					<div class="flow-step flow-step-line flow-step-bg"></div>
+					<div class="flow-step">
+						<a href="#">
+							<div class="flow-p flow-tow"></div>
+							<div class="flow-text">确定订单信息</div>
+						</a>
+					</div>
+					<div class="flow-step flow-step-line flow-step-bg"></div>
+					<div class="flow-step">
+						<a href="#">
+							<div class="flow-p flow-three"></div>
+							<div class="flow-text">成功提交订单</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<div id="shoppingcar">
+		<div class="car_list">
+			<ul class="clearfix">
+				<li class="all_c">
+					<input type="checkbox" class="allcheck" id="AllCheck">
+					全选
+				</li>
+				<li class="s_xi">商品信息</li>
+				<li>单价</li>
+				<li>数量</li>
+				<li>小计</li>
+				<li>操作</li>
+			</ul>
+		</div>
+		<div class="one-shop">
+        <!-- 一个商品 -->
+	        <div class="one-goods">
+	            <div class="goods-msg">
+	            	<ul class="item-content clearfix">
+	            		<li class="ches"><input type="checkbox" class="goods-check GoodsCheck"> </li>
+	            		<li class="td-info">
+	            			<div>
+	            				<img src="produts/product_img4.jpg" width="80" height="80" alt="">
+								<div class="pro_main">
+									<p class="pro_name">膜法世家·1908护肤品专场-吸黑焕采水润嫩滑面膜贴组合21片装</p>
+	            					<p class="guige">尺码：21片</p>
+								</div>	
+	            				
+	            			</div>
+	            		</li>
+	            		<li class="td-price">
+	            			<p>￥<span class="shop-total-amount GoodsPrice">2199.00</span></p>
+	            		</li>
+	            		<li class="td-amount">
+	            			<button type="button" class="minus">-</button>
+	               			<input type="text" class="am-num-text" value="1">
+	                		<button type="button" class="plus">+</button>
+	                	</li>
+	                	<li class="td-sum">
+	                		<div class="inner_p">
+	                			2199.00
+	                		</div>
+	                	</li>
+	            		<li class="td-op"><a href="javscript:;" class="tb_del">删除</a></li>
+	            	</ul>
+	            </div>   
+	        </div>
+	        <div class="one-goods">
+	            <div class="goods-msg">
+	            	<ul class="item-content clearfix">
+	            		<li class="ches"><input type="checkbox" class="goods-check GoodsCheck"> </li>
+	            		<li class="td-info">
+	            			<div>
+	            				<img src="bigandsmall/AB2.jpg" width="80" height="80" alt="">
+								<div class="pro_main">
+									<p class="pro_name">膜法世家·1908护肤品专场-吸黑焕采水润嫩滑面膜贴组合21片装</p>
+	            					<p class="guige">尺码：21片</p>
+								</div>	
+	            				
+	            			</div>
+	            		</li>
+	            		<li class="td-price">
+	            			<p>￥<span class="shop-total-amount GoodsPrice">199.00</span></p>
+	            		</li>
+	            		<li class="td-amount">
+	            			<button type="button" class="minus">-</button>
+	               			<input type="text" class="am-num-text" value="1">
+	                		<button type="button" class="plus">+</button>
+	                	</li>
+	                	<li class="td-sum">
+	                		<div class="inner_p">
+	                			199.00
+	                		</div>
+	                	</li>
+	            		<li class="td-op"><a href="javscript:;" class="tb_del">删除</a></li>
+	            	</ul>
+	            </div>   
+	        </div>  
+	        <div class="shop-total">
+	            <label for="">
+	                <input type="checkbox" class="goods-check ShopCheck">店铺全选 </label>
+	            <p>本店合计：￥<span class="shop-total-amount ShopTotal">0.00</span></p>
+	        </div>
+    	</div>
+    	<div class="one-shop">
+        <!-- 一个商品 -->
+	        <div class="one-goods">
+	            <div class="goods-msg">
+	            	<ul class="item-content clearfix">
+	            		<li class="ches"><input type="checkbox" class="goods-check GoodsCheck"> </li>
+	            		<li class="td-info">
+	            			<div>
+	            				<img src="produts/product_img4.jpg" width="80" height="80" alt="">
+								<div class="pro_main">
+									<p class="pro_name">膜法世家·1908护肤品专场-吸黑焕采水润嫩滑面膜贴组合21片装</p>
+	            					<p class="guige">尺码：21片</p>
+								</div>	
+	            				
+	            			</div>
+	            		</li>
+	            		<li class="td-price">
+	            			<p>￥<span class="shop-total-amount GoodsPrice">2199.00</span></p>
+	            		</li>
+	            		<li class="td-amount">
+	            			<button type="button" class="minus">-</button>
+	               			<input type="text" class="am-num-text" value="1">
+	                		<button type="button" class="plus">+</button>
+	                	</li>
+	                	<li class="td-sum">
+	                		<div class="inner_p">
+	                			2199.00
+	                		</div>
+	                	</li>
+	            		<li class="td-op"><a href="javscript:;" class="tb_del">删除</a></li>
+	            	</ul>
+	            </div>   
+	        </div>
+	        <div class="one-goods">
+	            <div class="goods-msg">
+	            	<ul class="item-content clearfix">
+	            		<li class="ches"><input type="checkbox" class="goods-check GoodsCheck"> </li>
+	            		<li class="td-info">
+	            			<div>
+	            				<img src="bigandsmall/AB2.jpg" width="80" height="80" alt="">
+								<div class="pro_main">
+									<p class="pro_name">膜法世家·1908护肤品专场-吸黑焕采水润嫩滑面膜贴组合21片装</p>
+	            					<p class="guige">尺码：21片</p>
+								</div>	
+	            				
+	            			</div>
+	            		</li>
+	            		<li class="td-price">
+	            			<p>￥<span class="shop-total-amount GoodsPrice">199.00</span></p>
+	            		</li>
+	            		<li class="td-amount">
+	            			<button type="button" class="minus">-</button>
+	               			<input type="text" class="am-num-text" value="1">
+	                		<button type="button" class="plus">+</button>
+	                	</li>
+	                	<li class="td-sum">
+	                		<div class="inner_p">
+	                			199.00
+	                		</div>
+	                	</li>
+	            		<li class="td-op"><a href="javscript:;" class="tb_del">删除</a></li>
+	            	</ul>
+	            </div>   
+	        </div>  
+	        <div class="shop-total">
+	            <label for="">
+	                <input type="checkbox" class="goods-check ShopCheck">店铺全选 </label>
+	            <p>本店合计：￥<span class="shop-total-amount ShopTotal">0.00</span></p>
+	        </div>
+    	</div>
+    	<div class="all-total">
+	        <p>总价合计：￥<span class="shop-total-amount" id="AllTotal">0.00</span></p>
+	        <div class="Gopay">
+	        	<a href="#">
+	        		结算
+	        	</a>
+	        </div>
+    	</div>
+	</div>
+
+
+
+
+
+	<div id="footer">
+		<div class="footer_top">
+			<div class="cent">
+				<div class="block shop">
+					<h2>商城</h2>
+					<p>SHOP</p>
+					<img src="images/shop.png" height="44" width="44" alt="">
+					<ul>
+						<li>Yahoo代拍</li>
+						<li>乐天代购</li>
+					</ul>
+				</div>
+				<div class="block le">
+					<h2>帮助中心</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>新手教程</li>
+						<li>关于竞标</li>
+						<li>服务费用</li>
+						<li>试算表</li>
+					</ul>
+				</div>
+				<div class="block ce">
+					<h2>注意事项</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>禁运商品</li>
+						<li>重量与材积限制</li>
+						<li>仓储限制</li>
+						<li>免责声明</li>
+					</ul>
+				</div>
+				<div class="block ri">
+					<h2>客服</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>日常服务时间：9:30~22:00</li>
+						<li>节假服务时间：14:00~22:00</li>
+						<li>座机电话：021-60139809</li>
+						<li>邮箱：Grace_ohayooo@163.COM</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="bo">Copyright © 2016.Company name All rights reserved.上海哦哈哟网络科技有限公司</div>
+		</div>
+	</div>
+	<div id="fixbox">
+		<div class="mui_tab mui_top">
+			<a href="#">
+				<img src="images/t_malllogo.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="shoppingcar.html">
+				<img src="images/car.png" height="35" width="35" alt="">
+				<span class="fix_text">购物车</span>
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/yuan.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/guangzhu.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/shoucang.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab mui_bottom_one">
+			<a href="#">
+				<img src="images/erweimalogo.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab mui_bottom_tow">
+			<a href="javascript:;">
+				<img src="images/top.png" height="35" width="35" alt="">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

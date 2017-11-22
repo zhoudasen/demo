@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>register</title>
+	<link rel="stylesheet" href="fonts/iconfont.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/RegisterAndLogin.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+		<div class="header_wrap">
+			<div class="top_nav">
+				<div class="header_inner clearfix">
+					<div class="home">
+						<a href="index.html">
+							<em class="iconfont icon-home"></em>
+							网站首页
+						</a>
+					</div>
+					<div class="nav_list">
+						<ul class="nav_list_a">
+							<li class="hd_menu_tit"><a href="login.html">登录</a></li>
+							<li class="hd_menu_tit"><a href="register.html">注册</a></li>
+							<li class="hd_menu_tit"><a href="#">我的订单</a></li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu">我的特卖</a>
+								<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">品牌收藏(<b>0</b>)</a></li>
+										<li><a href="#">商品收藏(<b>0</b>)</a></li>
+										<li><a href="#">我的足迹(<b>0</b>)</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu">客服服务</a>
+								<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">联系客服</a></li>
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										<li><a href="#">知识产权投诉</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#" class="hd_menu"><em class="iconfont icon-phone"></em>手机版</a>
+								<div class="erweima">
+									<a href="#"><img src="images/erweima.jpg" alt=""></a>
+								</div>
+							</li>
+							<li class="hd_menu_tit menu_tit_one">
+								<a href="#"class="hd_menu">更多</a>
+								<div class="more_list">
+									<div class="top_nav_dis">
+									<ul>
+										<li><a href="#">合作专区</a></li>
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">服务中心</a></li>
+										
+									</ul>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_mid clearfix">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logonew.png" alt="">
+					</a>
+				</div>
+				<div class="logo_one">
+					<a href="#">
+						<img src="images/logo1.png" alt="">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="register" class="register zhaohui">
+		<h2>注册账号</h2>
+		<hr>
+		<hr>
+		<form id="registerForm" class="clearfix" name="form1" method="post" action="">
+			<div class="item">
+				<label for="" class="register_label">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
+				<input type="text" id="username" class="username">
+				<b></b>
+			</div>
+			<div class="item">
+				<label for="" class="register_label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+				<input type="password" id="password" class="password">
+				<b></b>
+			</div>
+			<div class="item">
+				<label for="" class="register_label">确定密码：</label>
+				<input type="password" class="password">
+				<b></b>
+			</div>
+			<div class="item">
+				<label for="" class="register_label">手机号码：</label>
+				<input type="text">
+				<b></b>
+			</div>
+			<div class="item">
+				<label for="" class="register_label">电子邮箱：</label>
+				<input type="text" >
+				<b></b>
+			</div>
+			<!-- <div class="item">
+				<label for="" class="register_label">验证码：</label>
+				<input type="text" class="Recommend_text">
+				<b></b>
+			</div> -->
+			<div class="item_ifo last_b">
+				<input type="checkbox" class="checkedbox" checked="checked">
+				<label for="">
+					我已阅读并同意
+					<a href="#">《福际商城用户注册协议》</a>
+				</label>
+			</div>
+			<div class="register_btn last_b">
+				<input type="submit" value="注册">
+			</div>
+			<div class="note last_b">
+				<span class="login_link last_b">已注册? 
+					<a href="login.html">赶紧登录</a>
+				</span>
+			</div>
+		</form>
+	</div>
+	<div id="footer">
+		<div class="footer_top">
+			<div class="cent">
+				<div class="block shop">
+					<h2>商城</h2>
+					<p>SHOP</p>
+					<img src="images/shop.png" height="44" width="44" alt="">
+					<ul>
+						<li>Yahoo代拍</li>
+						<li>乐天代购</li>
+					</ul>
+				</div>
+				<div class="block le">
+					<h2>帮助中心</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>新手教程</li>
+						<li>关于竞标</li>
+						<li>服务费用</li>
+						<li>试算表</li>
+					</ul>
+				</div>
+				<div class="block ce">
+					<h2>注意事项</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>禁运商品</li>
+						<li>重量与材积限制</li>
+						<li>仓储限制</li>
+						<li>免责声明</li>
+					</ul>
+				</div>
+				<div class="block ri">
+					<h2>客服</h2>
+					<hr>
+					<hr>
+					<ul>
+						<li>日常服务时间：9:30~22:00</li>
+						<li>节假服务时间：14:00~22:00</li>
+						<li>座机电话：021-60139809</li>
+						<li>邮箱：Grace_ohayooo@163.COM</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="bo">Copyright © 2016.Company name All rights reserved.上海哦哈哟网络科技有限公司</div>
+		</div>
+	</div>
+	<div id="fixbox">
+		<div class="mui_tab mui_top">
+			<a href="#">
+				<img src="images/t_malllogo.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="shoppingcar.html">
+				<img src="images/car.png" height="35" width="35" alt="">
+				<span class="fix_text">购物车</span>
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/yuan.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/guangzhu.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab">
+			<a href="#">
+				<img src="images/shoucang.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab mui_bottom_one">
+			<a href="#">
+				<img src="images/erweimalogo.png" height="35" width="35" alt="">
+			</a>
+		</div>
+		<div class="mui_tab mui_bottom_tow">
+			<a href="javascript:;">
+				<img src="images/top.png" height="35" width="35" alt="">
+			</a>
+		</div>
+	</div>
+</body>
+</html>
