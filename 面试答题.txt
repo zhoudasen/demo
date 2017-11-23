@@ -1,0 +1,83 @@
+1.什么是CSS reset?
+	html标签在浏览器都有默认样式，在不同的浏览器的的默认样式存在差异，开发时浏览器的默认样式可能给我们带来兼容性的问题，影响开发效率，解决方案就是将默认浏览器的样式全部覆盖掉，就引入rest.css
+
+2.写css样式是有考虑过css的性能吗？
+
+	1)尽量将样式写在单独的css文件中，在head元素中引用（好处：内容样式分离，易于管理和维护；减少页面体积；css文件可以被缓存、重用、维护成本减低）；
+	2）不使用@import，@import影响css文件加载速度；
+	3）避免使用复杂的选择器；
+	4）利用css继承减少代码量；
+
+3.浮动的原理和工作方式
+	浮动元素脱离文档流，不占据空间。
+	如何清除：1）在浮动元素后加一个空的div,设置其属性为div{clear:both}
+		  2)在父元素中添加{overflow:hidden}
+		  3）利用：after未伪选择符，设置{height:0;display:block;clear:both;}
+
+4.了解哪些选择器？权重的计算？
+	！important 10000 > 内联 1000 > id 100> 类|伪类|属性选择 10 > 伪元素 1
+	优先级：同等权值情况下   内联样式>内部样式表>外部样式表
+
+5.js有哪些数据类型，其中哪些是引用类型？
+	基本数据类型：Number String Boolen Undefined Null
+	引用类型：Object Array Date类型RegExp类型Function类型基本包装类型（Boolean类型Number类型String类型）单体内置对象（Global对象，Math对象）
+
+6.函数表达式与函数声明的区别
+	对于函数声明js解析器会优先读取，确保在所有代码执行之前声明已经被解析；函数表达式，如同定义的其他的基本类型变量一样，只在执行到某一句是才会进行解析；当使用函数声明的形式来定义函		数是，可以将调用语句写在函数声明之前，而函数表达式则不行，否则会报错。
+
+7.闭包的特点，闭包的作用
+	闭包是指有权访问另一个函数作用中的变量的函数。javascript允许使用内部函数，内部函数可以访问他们所在的外部函数中声明的所用局部变量、参数和声明的其他内部函数。闭包的常见创建方式：		在一个函数内部创建另一个函数。(注意由于闭包会使得函数的变量都被保存在内存中，内存消耗大，所以不能滥用闭包，影响网页的性能，解决方法就是在推出函数之前，将不使用的局部变量全部删除)
+	eg:function f1(){
+　　　　	var n=999;
+　　　　	function f2(){
+　　　　　　		alert(n); 
+　　　　	}
+　　　　	return f2;
+　　	   }
+　　	   var result=f1();
+　　	   result(); // 999
+
+8.作用域和作用域链
+	js中的变量有全局变量和局部变量，js中没有快级作用域，都是函数作用域；
+	作用域链：比如一个函数B，外面包含了一层函数A，现在在B中要访问一个变量c，现在B的范围内找有没有c，如果没有就往B的包含环境A中找，如果还没有就往A的包含环境找，一直到全局环境，整个向上查找的过程就形成了作用域链
+
+9.对原型链的理解
+	原型链的思想就是利用原型让一个引用类型继承另一个引用类型的属性和方法。
+	eg:function person(name){
+		this.name = name;
+	   }
+	   person.prototype.getname = function(){
+		return this.name;
+           }
+	   var zys = new person("zhouyongsen");
+	   zys.getname();//zhouyongsen
+
+10.ajax的实现和原理
+	原理：Ajax的原理简单来说通过XMLHttpRequest对象来向服务器发起异步请求，从服务器获得数据，然后用javascript来操作Dom而更新页面。这其中最关键的一步就是从服务器获得请求数据
+	eg:
+	var xhr;
+	function createhttp(){
+		if(window.ActiveXObject){
+			xhr = new ActiveXObect("Microsoft.XMLHTTP")
+		}else if(window.XMLHttpRequest){
+			xhr = new XMLHttpRequest(); 
+		}
+	}
+	createhttp();
+	xhr.open("get",url,true);
+	xhr.onreadystatechange = function () {
+		if(xhr.readyState == 4){
+			if(xhr.status === 200){
+				//内容
+			}
+		}
+	}
+	xhr.send();
+
+
+
+
+
+
+
+
